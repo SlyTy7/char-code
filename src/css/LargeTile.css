@@ -5,15 +5,37 @@
   align-items: center;
 }
 .large-tile {
-  max-width: 400px;
+  max-width: 300px;
+  min-height: 300px;
+  width: 100%;
   padding: 30px;
   border-radius: 5px;
   box-shadow: 0px 2px 10px #282c30;
   background-color: white;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+/* default heading */
 .heading {
   font-size: 40px;
   margin: 0;
   font-weight: bold;
 }
+/* end default heading */
+/* key info */
+.key-info p.code {
+  margin: 0;
+}
+.key-info p.key {
+  margin: 5px 0 5px 0;
+  font-size: 100px;
+  line-height: 150px;
+  min-height: 150px;
+  font-weight: bold;
+}
+.key-info p.key-code {
+  margin: 15px 0 0 0;
+}
+/* end key info */
