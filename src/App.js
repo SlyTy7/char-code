@@ -9,6 +9,7 @@ export default class App extends React.Component {
 
     this.state = {
       "currentKey": null,
+      "key": {},
       "keycodes": {
         'backspace' : '8',
         'tab' : '9',
@@ -110,6 +111,26 @@ export default class App extends React.Component {
         'single_quote' : '222'
       }
     };
+  }
+
+  handleKeyPress = e => {
+    const char = e.key;
+    const charCode = e.keyCode;
+    const code = e.code;
+    const keyObj = { char, charCode, code };
+
+    console.log(e);
+
+    this.setState({
+      key: keyObj
+    });
+  };
+
+  componentDidMount = () => {
+    document.addEventListener('keydown', this.handleKeyPress);
+  }
+  componentWillUnmount = () => {
+    document.removeEventListener('keydown', this.handleKeyPress);
   }
 
   render() {
