@@ -1,7 +1,7 @@
 .body {
-  background: #09d3ac;
-  min-height: calc(100vh - 80px);
-  padding: 70px 10px 10px 10px;
+  background: #114958;
+  min-height: calc(100vh - 90px);
+  padding: 70px 20px 20px 20px;
   position: absolute;
   top: 0;
   right: 0;
