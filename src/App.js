@@ -119,8 +119,6 @@ export default class App extends React.Component {
     const code = e.code;
     const keyObj = { char, charCode, code };
 
-    console.log(e);
-
     this.setState({
       key: keyObj
     });
