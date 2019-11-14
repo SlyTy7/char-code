@@ -1,0 +1,11 @@
+.body {
+  background: #09d3ac;
+  min-height: calc(100vh - 80px);
+  padding: 70px 10px 10px 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}

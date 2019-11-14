@@ -1,0 +1,22 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #282c34;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: white;
+  box-shadow: 0px 2px 10px #282c30;
+  z-index: 1000;
+}
+.header .header-logo-container {
+  padding-left: 20px;
+}
+.header .header-logo-container .header-logo {
+  font-size: 20px;
+}
+.header .header-nav-container {
+  width: 100%;
+}
