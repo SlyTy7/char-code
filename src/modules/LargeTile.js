@@ -1,27 +1,28 @@
 import React from 'react';
 import '../css/LargeTile.css';
 
+let TileBody = props => {
+  const keyObj = props.keyPressed;
+
+  if(!keyObj){
+    return <p className="heading">Press any key to get the key info</p>;
+  }
+
+  return (
+    <div className="key-info">
+      <p className="code">{keyObj ? keyObj.code : ""}</p>
+      <p className="key">{keyObj ? keyObj.char : ""}</p>
+      <p className="key-code">{keyObj ? keyObj.charCode : ""}</p>
+    </div>
+  );
+};
+
 export default class LargeTile extends React.Component {
   render() {
-    const keyObj = this.props.keyPressed;
-    const key = keyObj ? keyObj.char : "";
-    const keyCode = keyObj ? keyObj.charCode : "";
-    const code = keyObj ? keyObj.code : "";
-    const keyInfo = (
-      <div className="key-info">
-        <p className="code">{code}</p>
-        <p className="key">{key}</p>
-        <p className="key-code">{keyCode}</p>
-      </div>
-    );
-
-    const heading = <p className="heading">Press any key to get the key info</p>;
-    const tileBody = keyObj ? keyInfo : heading ;
-
     return (
       <div className="large-tile-container">
         <div className="large-tile">
-          {tileBody}
+          <TileBody keyPressed={this.props.keyPressed} />
         </div>
       </div>
     );
