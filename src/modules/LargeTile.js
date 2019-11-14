@@ -3,7 +3,6 @@ import '../css/LargeTile.css';
 
 export default class LargeTile extends React.Component {
   render() {
-    // "Press any key to get the key info";
     return (
       <div className="large-tile">
         <div className="large-tile-inner-container">
