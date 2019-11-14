@@ -1,13 +1,14 @@
-.large-tile {
+.large-tile-container {
   min-height: 50vh;
   width: 100%;
-  max-width: 500px;
+}
+.large-tile {
+  max-width: 600px;
+  padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 2px 10px #282c30;
   background-color: white;
-}
-.large-tile-inner-container {
-  padding: 20px;
+  margin: 0 auto;
 }
 .heading {
   font-size: 40px;
