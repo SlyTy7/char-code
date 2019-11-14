@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/LargeTile.css';
 
-class LargeTile extends React.Component {
+export default class LargeTile extends React.Component {
   render() {
     return (
       <div className="large-tile">
@@ -12,6 +12,3 @@ class LargeTile extends React.Component {
     );
   }
 }
-
-
-export default LargeTile;

@@ -1,12 +1,12 @@
 import React from 'react';
 import '../css/Tiles.css';
 
-function Tiles() {
-  return (
-    <div className="tiles">
+export default class Tiles extends React.Component {
+  render() {
+    return (
+      <div className="tiles">
 
-    </div>
-  );
+      </div>
+    );
+  }
 }
-
-export default Tiles;
