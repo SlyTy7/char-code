@@ -6,7 +6,9 @@ export default class LargeTile extends React.Component {
     return (
       <div className="large-tile-container">
         <div className="large-tile">
-          <p className="heading">{this.props.currentKey || "Press any key to get the key info"}</p>
+          <p className="heading">
+            {this.props.keyPressed ? this.props.keyPressed.char : "Press any key to get the key info"}
+          </p>
         </div>
       </div>
     );

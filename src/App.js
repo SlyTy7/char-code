@@ -8,8 +8,7 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
-      "currentKey": null,
-      "key": {},
+      "key": null,
       "keycodes": {
         'backspace' : '8',
         'tab' : '9',
@@ -135,7 +134,7 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <Header />
-        <Body currentKey={this.state.currentKey} />
+        <Body keyPressed={this.state.key} />
       </div>
     );
   }

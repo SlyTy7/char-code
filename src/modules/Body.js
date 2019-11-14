@@ -7,7 +7,7 @@ export default class Body extends React.Component {
   render() {
     return (
       <div className="body">
-        <LargeTile currentKey={this.props.currentKey}/>
+        <LargeTile keyPressed={this.props.keyPressed}/>
         <Tiles />
       </div>
     );
